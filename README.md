@@ -4,9 +4,10 @@
 
 ### Create new conda virtual environment
 
-    conda create --name audio_classify python=3.7 -y
-    conda activate audio_classify
-
+```
+conda create --name audio_classify python=3.7 -y
+conda activate audio_classify
+```
 
 ### Installation
 
