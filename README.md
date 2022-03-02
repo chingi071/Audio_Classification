@@ -13,7 +13,7 @@ conda activate audio_classify
 
 ```
 conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 -c pytorch -y
-git clone 
+git clone https://github.com/chingi071/Audio_Classification
 pip install -r requirements.txt
 ```
 
