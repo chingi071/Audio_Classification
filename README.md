@@ -2,20 +2,20 @@
 
 ## Dependency Setup
 
-### Create new conda virtual environment
+**Create new conda virtual environment**
 
 ```
 conda create --name audio_classify python=3.7 -y
 conda activate audio_classify
 ```
 
-### Installation
+**Installation**
 
-<pre>
+```
 conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 -c pytorch -y
 git clone 
 pip install -r requirements.txt
-<pre>
+```
 
 ## Dataset Preparation
 **Open source audio dataset**
@@ -55,14 +55,14 @@ And then create the dataset yaml.
 
 The Tomofun-AI dataset structure is as follows:
 
-<pre>
+```
 train
 ├── train_00001.wav
 ├── train_00002.wav
 ├── ...
 └── train_01200.wav
 tomofun_train.csv
-<pre>
+```
 
 **Data Augmentation**
 We use [Audiomentations](https://github.com/iver56/audiomentations) to add more data.
@@ -70,7 +70,7 @@ We use [Audiomentations](https://github.com/iver56/audiomentations) to add more 
 
 The dataset structure is as follows:
 
-<pre>
+```
 tomofun_aug_train
 ├── aug_0_train_00001.wav
 ├── aug_0_train_00002.wav
@@ -80,7 +80,7 @@ tomofun_aug_train
 ├── ...
 └── train_01200.wav
 tomofun_aug_train.csv
-<pre>
+```
 
 **Data Visualize**
 * data_visualize.ipynb
@@ -90,49 +90,49 @@ The model you can choose: ResNet18、ResNet34、ResNet50、ResNet101、ResNet152
 
 **Train on one GPU**
 
-<pre>
+```
 python train.py --yaml_file=tomofun.yaml --model=ResNet18 --model_saved_path=workdirs
-<pre>
+```
 
 **Train on multi-GPU**
 
-<pre>
+```
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py --yaml_file=tomofun.yaml --model=Convnext_tiny --model_saved_path=workdirs
-<pre>
+```
 
 To enable one more multi-GPU training, use the following command.
 
-<pre>
+```
 CUDA_VISIBLE_DEVICES=2,3 python -m torch.distributed.launch --nproc_per_node=2 --master_port 9999 train.py --yaml_file=tomofun.yaml --model=Convnext_tiny --model_saved_path=workdirs
-<pre>
+```
 
 **Start TensorBoard**
 
-<pre>
+```
 tensorboard --logdir runs
-<pre>
+```
 
 ## Predict
 
-<pre>
+```
 python predict.py --yaml_file=tomofun.yaml --model=Convnext_tiny --model_saved_path=workdirs --test_data=test_data
-<pre>
+```
 
 ## Convert to ONNX
 
-<pre>
+```
 pip install onnx onnxruntime==1.6.0
 
 python convert_to_onnx.py --yaml_file=tomofun.yaml --model=Convnext_tiny --model_saved_path=workdirs --model_weights=best.pth
 
 python onnx_predict.py --test_data=test_data
-<pre>
+```
 
 ## Record audio
 
-<pre>
+```
 pip install pyaudio
-<pre>
+```
 
 Create the record file using the following ipynb file.
 
@@ -140,7 +140,7 @@ Create the record file using the following ipynb file.
 
 ## Result
 
-<pre>
+```
 device: cuda:1, rank: 1, world_size: 2
 device: cuda:0, rank: 0, world_size: 2
 Train_Epoch: 0/99, Training_Loss: 0.011717653522888819 Training_acc: 0.42
@@ -163,7 +163,7 @@ Valid_Epoch: 99/99, Valid_Loss: 0.0006921298647505341 Valid_acc: 0.99
 --------------------------------
 Finished Training.
 
-<pre>
+```
 
 * Accuracy
 
