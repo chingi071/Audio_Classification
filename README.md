@@ -19,6 +19,7 @@ pip install -r requirements.txt
 
 ## Dataset Preparation
 **Open source audio dataset**
+
 Tomofun-AI 狗音辨識: https://github.com/lawrencechen0921/Tomofun-AI-
 
 Kaggle Audio Cats and Dogs: https://www.kaggle.com/mmoreaux/audio-cats-and-dogs
@@ -26,6 +27,7 @@ Kaggle Audio Cats and Dogs: https://www.kaggle.com/mmoreaux/audio-cats-and-dogs
 Kaggle Freesound General-Purpose Audio Tagging Challenge: https://www.kaggle.com/c/freesound-audio-tagging/data
 
 **Data Preprocessing**
+
 If you want to try your dataset, please prepare the following items.
 * The training/ validation dataset file
 * The data label csv
@@ -65,6 +67,7 @@ tomofun_train.csv
 ```
 
 **Data Augmentation**
+
 We use [Audiomentations](https://github.com/iver56/audiomentations) to add more data.
 * data_augmentation.ipynb
 
