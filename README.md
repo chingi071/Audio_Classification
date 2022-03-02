@@ -2,14 +2,14 @@
 
 ## Dependency Setup
 
-**Create new conda virtual environment**
+### Create new conda virtual environment
 
 <pre>
 conda create --name audio_classify python=3.7 -y
 conda activate audio_classify
 <pre>
 
-**Installation**
+### Installation
 
 <pre>
 conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 -c pytorch -y
