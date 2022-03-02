@@ -1,0 +1,8 @@
+train_file: cats_dogs_train
+train_csv: cat_dog_train.csv
+valid_file: None
+valid_csv: None
+
+nc: 2
+
+names: ['cat', 'dog']

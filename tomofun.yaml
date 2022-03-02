@@ -1,0 +1,8 @@
+train_file: Tomofun-AI--master/train/train
+train_csv: tomofun_train.csv
+valid_file: None
+valid_csv: None
+
+nc: 6
+
+names: ['Barking', 'Howling', 'Crying', 'COSmoke', 'GlassBreaking', 'Other']

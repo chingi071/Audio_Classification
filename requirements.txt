@@ -1,0 +1,10 @@
+pandas
+matplotlib
+seaborn
+scikit-learn
+tensorboardX
+pyyaml
+audiomentations
+librosa
+timm
+tqdm
