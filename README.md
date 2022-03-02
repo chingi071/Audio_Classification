@@ -165,7 +165,6 @@ Train_Epoch: 99/99, Training_Loss: 2.0122603179591654e-06 Training_acc: 1.00
 Valid_Epoch: 99/99, Valid_Loss: 0.0006921298647505341 Valid_acc: 0.99             
 --------------------------------
 Finished Training.
-
 ```
 
 * Accuracy
