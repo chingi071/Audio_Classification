@@ -33,7 +33,7 @@ If you want to try your dataset, please prepare the following items.
 
 Take the Kaggle Audio Cats and Dogs dataset as an example, please place the dataset in different folders according to the category.
 
-![image](https://github.com/chingi071/Audio_Classification/tree/main/README_pix/data_file.jpg)
+![image](https://github.com/chingi071/Audio_Classification/blob/main/README_pix/data_file.jpg)
 
 Next, create the data label csv using the following ipynb file.
 
@@ -43,7 +43,7 @@ Third, create the dataset yaml.
 
 * cat_dog.yaml
 
-![image](https://github.com/chingi071/Audio_Classification/tree/main/README_pix/cat_dog_yaml.jpg)
+![image](https://github.com/chingi071/Audio_Classification/blob/main/README_pix/cat_dog_yaml.jpg)
 
 Take the Tomofun-AI dataset as an example, please do data preprocessing. You will get tomofun_train.csv.
 
@@ -51,7 +51,7 @@ Take the Tomofun-AI dataset as an example, please do data preprocessing. You wil
 
 And then create the dataset yaml.
 
-![image](https://github.com/chingi071/Audio_Classification/tree/main/README_pix/tomofun_yaml.jpg)
+![image](https://github.com/chingi071/Audio_Classification/blob/main/README_pix/tomofun_yaml.jpg)
 
 The Tomofun-AI dataset structure is as follows:
 
@@ -167,12 +167,12 @@ Finished Training.
 
 * Accuracy
 
-![image](https://github.com/chingi071/Audio_Classification/tree/main/README_pix/Accuracy.jpg)
+![image](https://github.com/chingi071/Audio_Classification/blob/main/README_pix/Accuracy.jpg)
 
 * Loss
 
-![image](https://github.com/chingi071/Audio_Classification/tree/main/README_pix/Loss.jpg)
+![image](https://github.com/chingi071/Audio_Classification/blob/main/README_pix/Loss.jpg)
 
 * Confusion Matrix
 
-![image](https://github.com/chingi071/Audio_Classification/tree/main/README_pix/confusion_matrix.jpg)
+![image](https://github.com/chingi071/Audio_Classification/blob/main/README_pix/confusion_matrix.jpg)
